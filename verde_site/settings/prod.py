@@ -3,8 +3,6 @@ from verde_site.settings.common import *
 from decouple import config
 import dj_database_url
 
-
-DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # Database

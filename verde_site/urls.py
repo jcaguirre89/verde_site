@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from rest_framework.schemas import get_schema_view
+from rest_framework.documentation import include_docs_urls
 
 schema_view = get_schema_view(title='Pastebin API')
 
@@ -27,5 +28,6 @@ urlpatterns = [
     path('restaurant/api/', include('restaurant.urls')),
     path('users/api/', include('users.urls')),
     path('schema/', schema_view),
+    path('docs/', include_docs_urls(title='API Docs'))
 
 ]
