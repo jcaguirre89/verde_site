@@ -24,7 +24,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv(), default=['*'])
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv(), default='*')
 
 # Overriden User model
 AUTH_USER_MODEL = 'users.User'
