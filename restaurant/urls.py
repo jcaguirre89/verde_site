@@ -4,7 +4,7 @@ from . import views
 
 
 router = DefaultRouter()
-router.register(r'menu', views.MenuViewSet)
+router.register(r'menuitem', views.MenuViewSet)
 
 # The API URLs are now determined automatically by the router.
 urlpatterns = [
