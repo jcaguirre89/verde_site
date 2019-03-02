@@ -24,10 +24,10 @@ schema_view = get_schema_view(title='Pastebin API')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('blog/api/', include('blog.urls')),
-    path('restaurant/api/', include('restaurant.urls')),
-    path('users/api/', include('users.urls')),
+    path('api/blog/', include('blog.urls')),
+    path('api/restaurant/', include('restaurant.urls')),
+    path('api/users/', include('users.urls')),
     path('schema/', schema_view),
-    path('docs/', include_docs_urls(title='API Docs'))
+    path('api/docs/', include_docs_urls(title='API Docs'))
 
 ]
