@@ -6,4 +6,5 @@ class ArticleSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Article
-        fields = ('id', 'created', 'modified', 'title', 'abstract', 'content', 'user')
+        fields = ('id', 'created', 'modified', 'title', 'abstract',
+                  'content', 'pub_date', 'is_published', 'user')
